@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Beenzino</title>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
+	<script src="js/vide.min.js"></script>
+	<script src="js/rollover.js"></script>
+	<script src="js/hashTag.js"></script>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/common.css">
+	<!--[if It IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script>//토글드랍다운
+		$(document).ready(function(){
+			$(".submenu").hide();
+			$(".menu-icon").click(function(){
+				$(".submenu").slideToggle(200)
+				$(".ani").click(function(){
+					$(".submenu").hide();
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="container">
+	<!-- Start Nav -->
+	<nav>
+		<a href="#1"><img src="images/logo.gif" alt="logo" class="logo"></a>
+		<img src="images/menu-icon.gif" class="menu-icon">
+		<div class="menu">
+				<div class="ani"><a href="#2">AboutMe</a></div>
+				<div class="ani"><a href="#3">Photo</a></div>
+				<div class="ani"><a href="#4">Album</a>
+					<div class="menu2">
+						<div class="ani2"><a href="html/album.html#1">Lifes Like</a></div>
+						<div class="ani2"><a href="html/album.html#2">24 : 26</a></div>
+						<div class="ani2"><a href="html/album.html#3">11 : 11</a></div>
+						<div class="ani2"><a href="html/album.html#4">Up all night</a></div>
+						<div class="ani2"><a href="html/album.html#5">12</a></div>
+						<div class="ani2"><a href="html/album.html#6">Waves Like</a></div>
+					</div>
+				</div>
+				<div class="ani"><a href="#5">Activity</a></div>
+				<div class="ani"><a href="#6">Contact</a></div>
+		</div>
+		<div class="line"><div></div></div>
+	</nav>
+	<!-- End nav -->
+	<!-- Start fullpage -->
+	<div id="fullpage">
+		<div class="section" data-anchor="1" data-vide-bg="media/concert.mp4"></div>
+		<div class="section" data-anchor="2" data-vide-bg="images/zino3.jpg">
+			<div class="mobAboutCon">
+				<div class="mobAboutTop">
+					<div class="aboutText">
+						<div class="mobHash">
+							<a href="#">#빈지노</a>
+						</div>
+						<div class="mobSubHash">
+							<div class="mobSubHash1">
+								<div class="hashText"><a href="https://www.instagram.com/stefaniemichova/">#스테파니 미쵸바</a></div>
+								<div class="hashText"><a href="https://www.instagram.com/iabstudio/">#IABSTUDIO</a></div>
+								<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EC%9D%BC%EB%A6%AC%EB%84%A4%EC%96%B4/">#일리네어</a></div>
+								<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EC%8B%9C%EB%AF%B8%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4/">#시미트와이스</a></div>
+								<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EC%9E%AC%EC%A7%80%ED%8C%A9%ED%8A%B8/">#재지팩트</a></div>
+								<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EB%B9%88%EC%A7%80%EB%85%B8%EA%B5%B0%EB%8C%80/"># 군대</a></div>
+								<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EB%B9%88%EC%A7%80%EB%85%B8%EC%BD%98%EC%84%9C%ED%8A%B8/"># 빈지노 콘서트</a></div>
+							</div>
+							<div class="EMPTY"></div>
+							<div class="subBackHash">
+								<div class="subArrowBox">
+									<a href="#">
+										<img src="images/subArrow.png">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="mobAboutMiddle">
+
+				</div> -->
+				<div class="mobAboutBottom">
+					<div class="mobAboutText">
+						빈지노(Beenzino)는 2008년에 혜성처럼 등장하여자신의 실력을 입증하며 순식간에 힙합씬의 주목을 받게된다.<br><br>이 후 그의 프로젝트 팀 “Hot Clip”과 “Jazzyfact”의 활동을 거쳐온그는<br>2011년 일리네어레코즈에 입단 한다.<br><br>빈지노(Beenzino)라는 이름으로 정한 이유는 미국래퍼 ‘벤지노’와 자신의 본명인 ‘임성빈’을 합쳐 빈지노(Beenzino)라고 만들었다.
+					</div>
+				</div>
+			</div>
+			<div class="aboutCon">
+				<div class="aboutLeft">
+					<div class="hashTag">
+						<a href="#">#빈지노</a>
+					</div>
+					<div class="subHashTag" id="hash">
+						<div class="hashText"><a href="https://www.instagram.com/stefaniemichova/">#스테파니 미쵸바</a></div>
+						<div class="hashText"><a href="https://www.instagram.com/iabstudio/">#IABSTUDIO</a></div>
+						<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EC%9D%BC%EB%A6%AC%EB%84%A4%EC%96%B4/">#일리네어</a></div>
+						<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EC%8B%9C%EB%AF%B8%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4/">#시미트와이스</a></div>
+						<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EC%9E%AC%EC%A7%80%ED%8C%A9%ED%8A%B8/">#재지팩트</a></div>
+						<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EB%B9%88%EC%A7%80%EB%85%B8%EA%B5%B0%EB%8C%80/">#군대</a></div>
+						<div class="hashText"><a href="https://www.instagram.com/explore/tags/%EB%B9%88%EC%A7%80%EB%85%B8%EC%BD%98%EC%84%9C%ED%8A%B8/">#빈지노 콘서트</a></div>
+						<div class="EMPTY"></div>
+						<div class="backHash">
+							<div class="arrowBox">
+								<a href="#">
+									<img src="images/arrow.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aboutRight">
+					<h1 class="h1">Beenzino</h1>
+					<p>
+						빈지노(Beenzino)는 2008년에 혜성처럼 등장하여
+		자신의 실력을 입증하며<br>순식간에 힙합씬의 주목을 받게된다.<br><br>
+		이 후 그의 프로젝트 팀 <span class="group">“Hot Clip”</span>과 <span class="group">“Jazzyfact”</span>의 활동을 거쳐온그는<br>2011년 <span class="group">일리네어레코즈</span>에 입단 한다.<br><br>빈지노(Beenzino)라는 이름으로 정한 이유는 미국래퍼 ‘벤지노’와 자신의 본명인 ‘임성빈’을 합쳐 빈지노(Beenzino)라고 만들었다.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" data-anchor="3" data-vide-bg="images/photo.jpg">
+			<div class="photoCon">
+				<div class="goToPhoto">
+					<a href="html/photo.html">Click Me</a>
+				</div>
+			</div>
+		</div>
+		<div class="section" data-anchor="4" data-vide-bg="images/album_bg.jpg">
+			<!-- 모바일  시작-->
+			<div class="mobileContain">
+				<div class="EMPTY"></div>
+				<div class="EMPTY"></div>
+				<div class="albumGroup">
+					<div class="mobAlbum">
+						<a href="html/album.html#1"><img src="images/lifeslike2.png"></a>
+					</div>
+					<div class="mobAlbum">
+					<a href="html/album.html#2"><img src="images/24262.png"></a>
+					</div>
+				</div>
+				<div class="albumGroup"></div>
+				<div class="albumGroup">
+					<div class="mobAlbum">
+						<a href="html/album.html#3"><img src="images/11112.png"></a>
+					</div>
+					<div class="mobAlbum">
+						<a href="html/album.html#4"><img src="images/upallnight2.png"></a>
+					</div>
+				</div>
+				<div class="albumGroup"></div>
+				<div class="albumGroup">
+					<div class="mobAlbum">
+						<a href="html/album.html#5"><img src="images/122.png"></a>
+					</div>
+					<div class="mobAlbum">
+						<a href="html/album.html#6"><img src="images/waveslike2.png"></a>
+					</div>
+				</div>
+			</div>
+			<!-- 모바일 끝 -->
+			<div class="albumBox">
+		    <a href="html/album.html#1" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/lifeslike2.png',1)">
+					<img src="images/lifeslike1.png" width="200" height="200" id="Image3">
+		    </a>
+	      <a href="html/album.html#2" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/24262.png',1)">
+					<img src="images/24261.png" width="200" height="200" id="Image4">
+		    </a>
+	      <a href="html/album.html#3" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/11112.png',0)">
+					<img src="images/11111.png" width="200" height="200" id="Image5">
+		    </a>
+	      <a href="html/album.html#4" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/upallnight2.png',1)">
+					<img src="images/upallnight1.png" width="200" height="200" id="Image6">
+		    </a>
+	      <a href="html/album.html#5" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/122.png',1)">
+					<img src="images/121.png" width="200" height="200" id="Image7">
+		    </a>
+	      <a href="html/album.html#6" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/waveslike2.png',1)">
+					<img src="images/waveslike1.png" width="200" height="200" id="Image8">
+		    </a>
+			</div>
+	  </div>
+		<div class="section" data-anchor="5" data-vide-bg="images/activitybg.jpg">
+			<div id="mobileActivity">
+				<div class="mobileActGroupImg">
+					<div class="actImg">
+						<a href="#5">
+							<img src="images/act_jazzy.png">
+						</a>
+					</div>
+					<div class="actImg">
+						<a href="http://iab-studio.com/" target="_blank">
+							<img src="images/act_iab.png">
+						</a>
+					</div>
+					<div class="actImg">
+						<a href="http://illionaire.kr/" target="_blank">
+							<img src="images/act_illi.png">
+						</a>
+					</div>
+				</div>
+				<div class="mobileActGroupText">
+					<div class="actName">
+						<a href="#5">
+							<span class="actText">JazzyFact</span>
+						</a>
+					</div>
+					<div class="actName">
+						<a href="http://iab-studio.com/" target="_blank">
+							<span class="actText">IAB-STUDIO</span>
+						</a>
+					</div>
+					<div class="actName">
+						<a href="http://illionaire.kr/" target="_blank">
+							<span class="actText">IllionaireRecords</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="activityCon">
+				<div class="EMPTY"></div>
+				<div class="activityIMG">
+					<a href="#5">
+						<img src="images/act_jazzy.png">
+					</a>
+				</div>
+				<div class="EMPTY"></div>
+				<div class="EMPTY"></div>
+				<div class="EMPTY"></div>
+				<div class="activityIMG">
+					<a href="http://iab-studio.com/" target="_blank">
+						<img src="images/act_iab.png">
+					</a>
+				</div>
+				<div class="EMPTY"></div>
+				<div class="EMPTY"></div>
+				<div class="EMPTY"></div>
+				<div class="activityIMG">
+					<a href="http://illionaire.kr/" target="_blank">
+						<img src="images/act_illi.png">
+					</a>
+				</div>
+				<div class="EMPTY"></div>
+			</div>
+			<div class="activityCon">
+				<div class="activityText"><span class="highlight">JazzyFact</span><br><br>는 빈지노와 인근 고등학교에 다녔던 시미 트와이스가 고등학교 1, 2학년 무렵 처음 만나 2008년 결성하였다. 그 무렵, 각자 팀이 있었는데 빈지노는 당시 클럽 튠의 음악을 했었고 시미 트와이스는 재즈 힙합을 하고 있었다. 시미 트와이스는 "애시당초 그룹을 결성할 생각은 없었으나 함께 작업하다 보니 음반을 내도 되겠다 생각이 들어 하였다"고 밝혔다. 샘플링 작법으로 주로 작업을 하는 게 특징이다.</div>
+				<div class="verticalLine"></div>
+				<div class="activityText"><span class="highlight">IAB-STUDIO</span><br><br>는 2014년에 김한준, 신동민, 임성빈(빈지노) 3인이 모여 결성한 팀이다.Album cover artwork, Installation, Collaboration, Branding 등의 작업을 하는 IAB의 키워드는 ‘Analog’이다.팀의 뜻 ” I’ve always been”에서 알 수 있듯  “항상 그래왔듯, 앞으로 변함없이” 라는 의미와 함께 어린시절부터 지내온 세 사람의 정체성이 담겨있다.2017년 현재는 강동석, 차슬아, 권하율이 추가되어 6명의 멤버로 활동 하고 있다.IAB STUDIO는I’ve Always been 의 약자를 따 IAB studio로 만들었으며, 로고의 동그라미 세개는 각자 자신이 좋아하는 색깔들로 구성되어있다.</div>
+<div class="verticalLine"></div>
+<div class="activityText"><span class="highlight">Illionaire Records</span><br><br>는 2011년 1월, 도끼와 더 콰이엇이 설립한 대한민국의 주식회사이자 힙합 레이블이다. 서울특별시 영등포구 여의도동에 위치해 있으며, 앞글자 'I'를 숫자 '1'로 바꿔 "1LLIONAIRE"라 표기하기도 한다. 멤버로는 도끼, 더 콰이엇을 비롯 빈지노가 속해있다. 산하 레이블로 앰비션 뮤직(AMBITION MUSIK)을 두고 있다.</div>
+			</div>
+		</div>
+		<div class="section" data-anchor="6" data-vide-bg="images/zino1.jpg">
+			<div id="mobileContactCon">
+				<div class="topCon">
+					<div class="mobBigCon">Contact Me</div>
+				</div>
+				<div class="bottomCon">
+					<div class="mobBoxCon">
+						<a href="http://map.naver.com/?query=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC+%EA%B5%AD%EC%A0%9C%EA%B8%88%EC%9C%B5%EB%A1%9C2%EA%B8%B8%2C+37+2404+(%EC%97%AC%EC%9D%98%EB%8F%84%EB%8F%99)" target="_blank"><div class="map">지도보기</div></a>
+						<div class="EMPTY"></div>
+						<a href="http://illionaire.kr/contact.php" target="_blank"><div class="email">연락하기</div></a>
+					</div>
+				</div>
+			</div>
+			<div id="contactCon">
+				<div class="leftCon">
+					<div class="bigContact">Contact<br>Me</div>
+				</div>
+				<div class="rightCon">
+					<div class="text1 textInfo">서울특별시 영등포구 국제금융로2길, 37 2404 (여의도동)</div>
+					<div class="text2 textInfo">#2404, 37 Gukjegeumyung-ro 2-gil, Yeongdeungpo-gu, Seoul, Korea</div>
+					<div class="text3 textInfo"><span class="tel">tel.</span>070-4233-7658</div>
+					<div class="text4 textInfo">kimme@gmail.com</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <script type="text/javascript">
+	FastClick.attach(document.body);
+	$('#fullpage').fullpage();
+</script> -->
+<!-- 활성화하면 aboutme의 div박스 밀림 -->
+<!-- 모바일에서 빨리넘어가게 -->
+
+	<div class="subcontain">
+		<div class="submenu">
+			<div class="ani"><a href="#2">AboutMe</a></div>
+			<div class="ani"><a href="#3">Photo</a></div>
+			<div class="ani"><a href="#4">Album</div>
+			<div class="ani"><a href="#5">Activity</a></div>
+			<div class="ani"><a href="#6">Contact</a></div>
+		</div>
+	</div>
+	<audio src="media/Vibra.mp3" autoplay id="audio"></audio>
+	<script>
+		window.onload = function(){
+			var vol = document.getElementById('audio');
+			vol.volume = 0.1;
+		}
+	</script>
+</body>
+</html>

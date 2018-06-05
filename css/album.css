@@ -1,0 +1,300 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+@media screen and (max-width:767px){
+	nav .menu{visibility: hidden; display:none;}
+	.albumContain div{visibility: hidden; display:none;}
+
+	nav{
+		top:0px;
+		right:0px;
+		width:100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	nav .menu-icon{
+		position: absolute;
+		top:25px;
+		right:30px;
+	}
+	nav{
+		top:0px;
+		right:0px;
+		width:100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav .menu-icon{
+		position: absolute;
+		top:25px;
+		right:30px;
+	}
+
+	.subcontain{
+		height: auto;
+		top:80px;
+		position: fixed;
+	}
+
+	.subcontain .submenu{
+		width:100%;
+		height: 100vh;
+		display: block;
+		position: relative;
+	}
+	.submenu .ani{
+		background: rgba(0,0,0,0.9);
+		width: 100vw;
+		height: 17.384vh;
+		line-height: 17.384vh;
+		color: white;
+		text-align: center;
+		font-size: 1.3rem;
+		transition: 0.3s
+	}
+	.submenu .ani>a{
+		color:white;
+		display: block;
+		text-decoration: none;
+	}
+	.submenu .ani:hover{
+		background: rgba(66,164,255,0.2);
+	}
+/* End nav */
+	.mobileContain{
+		margin-top: 80px;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mobileContain .musicList{
+		list-style: none;
+	}
+	.mobileContain .musicList .li{
+		font-size: 0.9rem;
+		font-weight: lighter;
+		color: white;
+		display: block;
+		height: 6vh;
+		line-height: 6vh;
+		text-align: center;
+		transition: 0.2s;
+	}
+	.mobileContain .musicList .li:hover{
+		background: rgba(255, 255, 255,0.3);
+	}
+	.mobileContain .musicList a{
+		text-decoration: none;
+		color: white;
+	}
+	.mobileContain .musicList .li a{
+		display: block;
+	}
+	.mobileContain .musicList .li .num{
+		display: inline;
+		color: rgb(251, 217, 68);
+		font-weight: bold;
+		font-size: 0.7rem;
+		margin-right: 7px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:991px){
+	.mobileContain{visibility:hidden; display:none;}
+	nav .menu{visibility: hidden; display:none;}
+
+	nav{
+		top:0px;
+		right:0px;
+		width:100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	nav .menu-icon{
+		position: absolute;
+		top:25px;
+		right:30px;
+	}
+	nav{
+		top:0px;
+		right:0px;
+		width:100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	nav .menu-icon{
+		position: absolute;
+		top:25px;
+		right:30px;
+	}
+	.subcontain{
+		height:auto;
+		top:80px;
+		position: fixed;
+	}
+	.subcontain .submenu{
+		width:100%;
+		height: 100vh;
+		display: block;
+		position: relative;
+	}
+	.submenu .ani{
+		background: rgba(0,0,0,0.9);
+		width: 100vw;
+		height: 17.384vh;
+		line-height: 17.384vh;
+		color: white;
+		text-align: center;
+		font-size: 1.3rem;
+		transition: 0.3s
+	}
+	.submenu .ani>a{
+		color:white;
+		display: block;
+		text-decoration: none;
+	}
+	.submenu .ani:hover{
+		background: rgba(66,164,255,0.2);
+	}
+/* End nav */
+}
+@media screen and (min-width:992px){
+	.submenu{visibility:hidden; display:none;}
+	.menu-icon{visibility:hidden; display:none;}
+	.mobileContain{visibility:hidden; display:none;}
+}
+#container{
+	width:100%;
+	padding:0;
+}
+#fullpage .section{
+	background: rgba(0,0,0,0.5);
+}
+nav{
+	top:0;
+	left:0;
+	width:100vw;
+	height:80px;
+	line-height: 80px;
+	background:rgba(0,0,0,0);
+	position:fixed;
+	z-index: 100;
+}
+nav .line > div{
+	background:rgba(255,255,255,0.2);
+	z-index: 100;
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 1px;
+}
+nav .logo{
+	float:left;
+	line-height: 80px;
+	margin:25px 30px;
+}
+nav .menu{
+	float:right;
+}
+nav .menu .ani>a{
+	text-decoration: none;
+	display:block;
+	color: white;
+}
+nav .menu .menu2{
+	background: rgba(255,255,255,0.0);
+	color:white;
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+nav .menu .menu2 .ani2{
+	height: 50px;
+	font-size: 0.9rem;
+	transition: 0.3s;
+}
+nav .menu .menu2 .ani2 a{
+	text-decoration: none;
+	color: white;
+}
+nav .menu .menu2 .ani2:hover{transform:scale(1.2);}
+nav .menu .ani:hover div { display: block; }
+nav .ani{
+	background: rgba(255,255,255,0.0);
+	width:130px;
+	line-height: 80px;
+	text-align: center;
+	font-size:1.3rem;
+	float:left;
+	transition: 0.3s;
+}
+nav .ani:hover { transform:scale(1.2); }
+nav .menu div>a:visited{text-decoration: none;}
+#fullpage .section .albumContain{
+	padding: 0px 5%;
+	margin-top: 80px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#fullpage .section .trackList{
+	color: white;
+}
+#fullpage .section .trackList ul{
+	list-style: none;
+}
+#fullpage .section .trackList ul li{
+	display: block;
+	font-size: 1.5vmin;
+	height: 5vmin;
+	line-height: 5vmin;
+	transition: 0.6s;
+}
+#fullpage .section .trackList ul li:hover{
+	background: rgba(255, 255, 255,0.3);
+}
+#fullpage .section .trackList ul li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+#fullpage .section .trackList ul .num{
+	display: inline;
+	margin-right: 20px;
+	color: rgb(251, 217, 68);
+	font-size: 0.7rem;
+	font-weight: bolder;
+}
+#fullpage .section .albumText{
+	width: 30vw;
+	padding: 0px 5%;
+	/*background: rgba(0,0,0,0.7);*/
+	text-align: justify;
+	color: white;
+	font-size: 1.4vmin;
+	font-weight: lighter;
+	line-height: 180%;
+}
+audio{
+	visibility: hidden;
+}

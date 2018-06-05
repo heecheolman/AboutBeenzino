@@ -1,0 +1,786 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+@media screen and (max-width:767px){
+	nav .menu{visibility: hidden; display:none;}
+	.section .albumBox{visibility: hidden; display:none;}
+	.activityCon{visibility: hidden; display:none;}
+	.activityCon .activityText{visibility: hidden; display:none;}
+	.activityCon .verticalLine{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(6) #contactCon{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(6) #contactCon .leftCon{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(6) #contactCon .rightCon{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(6) #contactCon .leftCon .bigContact{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(6) #contactCon .rightCon .text1{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(6) #contactCon .rightCon .text2{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(6) #contactCon .rightCon .text3{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(6) #contactCon .rightCon .text4{visibility: hidden; display:none;}
+	#fullpage .section:nth-child(2) .aboutCon{visibility: hidden; display:none;}
+	#fullpage .section .aboutCon .aboutLeft .subHashTag .backHash{visibility: hidden; display: none;}
+
+	nav{
+		top:0px;
+		right:0px;
+		width:100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	nav .menu-icon{
+		position: absolute;
+		top:25px;
+		right:30px;
+	}
+	.subcontain{
+		height: auto;
+		top:80px;
+		position: fixed;
+	}
+	.subcontain .submenu{
+		width:100%;
+		display: block;
+		position: relative;
+	}
+	.submenu .ani{
+		background: rgba(0,0,0,0.9);
+		width: 100vw;
+		height: 17.384vh;
+		line-height: 17.384vh;
+		color: white;
+		text-align: center;
+		font-size: 1.3rem;
+		transition: 0.3s
+	}
+	.submenu .ani>a{
+		color:white;
+		display: block;
+		text-decoration: none;
+	}
+	.submenu .ani:hover{
+		background: rgba(66,164,255,0.2);
+	}
+	/*---End nav---*/
+	/*Start AboutMe*/
+	.mobAboutCon{
+		background: transparent;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+	.mobAboutCon .mobAboutTop{
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		background: rgba(82, 105, 140, 0.4);
+
+		width: 100%;
+		height: 50%;
+	}
+	.mobAboutCon .mobAboutTop .aboutText .mobHash{
+		font-size: 60px;
+		transition: 0.3s;
+	}
+	.mobAboutCon .mobAboutTop .aboutText .mobHash a{
+		color: white;
+		text-decoration: none;
+	}
+	.mobAboutCon .mobAboutTop .aboutText .mobHash:hover{
+		font-size: 52px;
+	}
+	.mobAboutCon .mobAboutTop .aboutText .mobSubHash{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+	.mobAboutCon .mobAboutTop .aboutText .mobSubHash .mobSubHash1{
+		/*position: relative;*/
+	}
+	.mobAboutCon .mobAboutTop .aboutText .mobSubHash .mobSubHash1 .hashText{
+		color: white;
+		font-weight: lighter;
+		display: block;
+		font-size: 1rem;
+		height: 25px;
+		line-height: 25px;
+		transition: 0.3s;
+	}
+	.mobAboutCon .mobAboutTop .aboutText .mobSubHash .mobSubHash1 .hashText:hover{
+		transform: translate(5px, 0);
+	}
+	.mobAboutCon .mobAboutTop .mobSubHash1 .hashText a{
+		text-decoration: none;
+		color: white;
+	}
+	.mobAboutCon .EMPTY{
+		width: 20px;
+	}
+ .subBackHash{
+		width: 30px;
+		height: 45px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 30px;
+		margin: 0 auto;
+		padding: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.subBackHash .subArrowBox{
+		width: 30px;
+		height: 45px;
+		border-radius: 30px;
+		display: block;
+	}
+	.subBackHash .subArrowBox a{
+		width: 30px;
+		height: 45px;
+		border-radius: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.subBackHash a:hover{
+		background: rgba(255, 255, 255, 0.1);
+	}
+	.subBackHash .subArrowBox img{
+		transition: 0.2s;
+	}
+	.subBackHash img:hover{
+		transform: translate(-3px,0px);
+	}
+
+	.mobAboutCon .mobAboutBottom{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(246, 217, 53, 0.2);
+		width: 100%;
+		height: 50%;
+	}
+	.mobAboutCon .mobAboutBottom .mobAboutText{
+		padding: 0 5%;
+		color: white;
+		font-size: 0.8rem;
+		font-weight: lighter;
+		line-height: 150%;
+		word-spacing: 2px;
+	}
+	/*End AboutMe*/
+	/*---Start album---*/
+	.section:nth-child(4){
+		padding: 0px 5%;
+	}
+	.mobileContain{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.mobileContain .EMPTY{
+		height: 60px;
+	}
+	.mobileContain .albumGroup{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 12%;
+	}
+	.mobileContain .albumGroup .mobAlbum{
+		margin-left: 5%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30%;
+		transition: 0.3s;
+	}
+	.mobileContain .albumGroup .mobAlbum:hover{
+		transform: scale(0.9);
+	}
+	.mobileContain .albumGroup img{
+		width: 100%;
+		height: 100%;
+	}
+	/*---End album---*/
+	/*Start Activity*/
+	#mobileActivity{
+		margin-top: 20vh;
+		padding: 0 5%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#mobileActivity .mobileActGroupImg{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#mobileActivity .mobileActGroupImg .actImg{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 22vh;
+		height: 22vh;
+		transition: 0.3s;
+	}
+	#mobileActivity .mobileActGroupImg .actImg:hover{
+		transform: scale(0.9);
+	}
+	#mobileActivity .mobileActGroupImg .actImg img{
+		width: 18vh;
+		height: 18vh;
+	}
+	#mobileActivity .mobileActGroupText{
+		justify-content: center;
+		align-items: center;
+	}
+	#mobileActivity .mobileActGroupText .actName{
+		padding: 0px 10%;
+		width: 30vw;
+		height: 22vh;
+		line-height: 22vh;
+		font-size: 5vmin;
+		align-items: center;
+		transition: 0.4s;
+	}
+	#mobileActivity .mobileActGroupText .actName:hover{
+		transform: translate(5px,0px);
+	}
+	#mobileActivity .mobileActGroupText .actName a{
+		display: block;
+	}
+	#mobileActivity .mobileActGroupText .actName .actText{
+		color: white;
+	}
+	#mobileActivity .mobileActGroupText a{
+		text-decoration: none;
+		color: white;
+	}
+	#fullpage .section:nth-child(6){
+		background: black;
+	}
+
+	#mobileContactCon{
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+	}
+	#mobileContactCon .topCon{
+		padding: 0 5%;
+	}
+	#mobileContactCon .topCon .mobBigCon{
+		color: white;
+		font-weight: bold;
+		font-size: 15vmin;
+	}
+	#mobileContactCon .bottomCon{
+		display: flex;
+		flex-direction: column;
+		padding: 0 5%;
+		margin-top: 10%;
+	}
+	#mobileContactCon .bottomCon .EMPTY{
+		height: 20px;
+	}
+	#mobileContactCon .bottomCon .mobBoxCon .map{
+		width: 50vmin;
+		height: 20vmin;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5vmin;
+		font-weight: normal;
+		border: 2px solid rgba(255, 255, 255, 0.4);
+		border-radius: 7px;
+		transition: 0.2s;
+	}
+	#mobileContactCon .bottomCon .mobBoxCon a{
+		color: white;
+		text-decoration: none;
+	}
+	#mobileContactCon .bottomCon .mobBoxCon .email{
+		width: 50vmin;
+		height: 20vmin;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5vmin;
+		font-weight: normal;
+		border: 2px solid rgba(255, 255, 255, 0.4);
+		border-radius: 7px;
+		transition: 0.2s;
+	}
+	#mobileContactCon .bottomCon .mobBoxCon .map:hover{
+		background: rgba(101, 101, 100, 0.4);
+	}
+	#mobileContactCon .bottomCon .mobBoxCon .email:hover{
+		background: rgba(101, 101, 100, 0.4);
+	}
+
+	/*End Contact*/
+}
+@media screen and (min-width:768px) and (max-width:991px){
+	nav .menu{visibility: hidden; display:none;}
+	.mobileContain{visibility: hidden; display: none;}
+	#mobileActivity{visibility: hidden;
+	display:none;}
+	#mobileContactCon{visibility: hidden; display: none;}
+	.mobAboutCon{visibility: hidden; display: none;}
+	nav{
+		top: 0px;
+		right: 0px;
+		width: 100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav .menu-icon{
+		position: absolute;
+		top: 25px;
+		right: 30px;
+	}
+
+	.subcontain{
+		height: auto;
+		top: 80px;
+		position: fixed;
+	}
+
+	.subcontain .submenu{
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+	.submenu .ani{
+		background: rgba(0,0,0,0.9);
+		width: 100vw;
+		height: 17vh;
+		line-height: 17vh;
+		color: white;
+		text-align: center;
+		font-size: 1.3rem;
+		transition: 0.3s
+	}
+	.submenu .ani>a{
+		color:white;
+		display: block;
+		text-decoration: none;
+	}
+	.submenu .ani:hover{
+		background: rgba(66,164,255,0.2);
+	}
+	/*---End nav---*/
+
+}
+@media screen and (min-width:992px){
+	.submenu{visibility:hidden; display:none;}
+	.menu-icon{visibility:hidden; display:none;}
+	.mobileContain{visibility:hidden; display:none;}
+	#mobileActivity {visibility: hidden; display:none;}
+	#mobileContactCon{visibility: hidden; display: none;}
+	.mobAboutCon{visibility: hidden; display: none;}
+	.subBackHash{visibility: hidden; display: none;}
+}
+#container{
+	width:100%;
+	padding:0;
+}
+#fullpage .section:nth-child(2){
+		/*background: #bce237;*/
+}
+#fullpage .section:nth-child(3){
+	/*background: #44b5d2;*/
+}
+#fullpage .section:nth-child(4){
+	/*background: #d95af4;*/
+}
+#fullpage .section:nth-child(5){
+	background: rgba(0,0,0,0.8);
+}
+#fullpage .section:nth-child(6){
+	background: rgba(0,0,0,0.7);
+}
+
+nav{
+	top:0;
+	left:0;
+	width:100vw;
+	height:80px;
+	line-height: 80px;
+	background:rgba(0,0,0,0);
+	position:fixed;
+	z-index: 100;
+}
+
+nav .line > div{
+	background:rgba(255,255,255,0.2);
+	z-index: 100;
+  position: fixed;
+  left: 0px;
+  top: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 1px;
+}
+
+nav .logo{
+	float:left;
+	line-height: 80px;
+	margin:25px 30px;
+}
+
+nav .menu{
+	float:right;
+}
+
+nav .menu .ani>a{
+	text-decoration: none;
+	display:block;
+	color: white;
+}
+
+nav .menu .menu2{
+	background: rgba(255,255,255,0.0);
+	color:white;
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+
+nav .menu .menu2 .ani2{
+	height: 50px;
+	font-size: 0.9rem;
+	transition: 0.3s;
+}
+nav .menu .menu2 .ani2 a{
+	text-decoration: none;
+	color: white;
+}
+nav .menu .menu2 .ani2:hover{
+	transform:scale(1.2);
+}
+
+nav .menu .ani:hover div { display: block; }
+
+nav .ani{
+	background: rgba(255,255,255,0.0);
+	width:130px;
+	line-height: 80px;
+	text-align: center;
+	font-size:1.3rem;
+	float:left;
+	transition: 0.3s;
+}
+
+nav .ani:hover { transform:scale(1.2); }
+/*nav .menu a:hover{
+	color:rgba(255, 202, 66, 1);
+}*/
+/*nav .menu div>a:hover{
+	background: rgba(66,164,255,0.4);
+}*/
+nav .menu div>a:visited{
+	text-decoration: none;
+}
+#fullpage .section{
+	opacity: 1;
+}
+#fullpage .section .aboutCon{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+#fullpage .section .aboutCon .aboutLeft{
+	width: 50%;
+	height: 100%;
+	background: rgba(82, 105, 140, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#fullpage .section .aboutCon .aboutLeft .hashTag{
+	padding: 0 5%;
+	transition: 0.2s;
+}
+#fullpage .section .aboutCon .aboutLeft .hashTag:hover{
+	opacity: 0.3;
+	transform: scale(0.7);
+}
+#fullpage .section .aboutCon .aboutLeft .hashTag a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 5.5rem;
+	color: white;
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag{
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag{
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .hashText{
+	color: white;
+	font-weight: lighter;
+	display: block;
+	font-size: 40px;
+	height: 80px;
+	line-height: 80px;
+	transition: 0.3s;
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .hashText a{
+	color: white;
+	text-decoration: none;
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .hashText:hover{
+	transform: translate(9px,0px);
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .EMPTY{
+	height: 20px;
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .backHash{
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+	margin: 0 auto;
+	padding: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .backHash .arrowBox{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	display: block;
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .backHash .arrowBox a{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .backHash a:hover{
+	background: rgba(255, 255, 255, 0.1);
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .backHash .arrowBox img{
+	width: 50%;
+	height: 50%;
+	transition: 0.2s;
+}
+#fullpage .section .aboutCon .aboutLeft .subHashTag .backHash img:hover{
+	transform: translate(-20%,0px);
+}
+#fullpage .section .aboutCon .aboutRight{
+	width: 50%;
+	height: 100%;
+	background: rgba(246, 217, 53, 0.2);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 5%;
+}
+#fullpage .section .aboutCon .aboutRight .h1{
+	text-align: right;
+	font-size: 5rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	color: #ffffff;
+	animation: pulse infinite;
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+
+#fullpage .section .aboutCon .aboutRight .h1:hover{
+	animation-play-state: paused;
+}
+
+				@keyframes slidein{
+					0%{
+						color: rgba(255, 255, 255, 0.5);
+					}
+					100%{
+						color: rgb(186, 3, 3);
+						transform: translate(10px, 0);
+					}
+				}
+
+#fullpage .section .aboutCon .aboutRight p{
+	width: 80%;
+	font-size: 1rem;
+	font-weight: lighter;
+	line-height: 1.4rem;
+	color: #ffffff;
+	text-align: right;
+}
+
+#fullpage .section .aboutCon .aboutRight p .group{
+	font-weight:bold;
+}
+/*End AboutMe*/
+/*Start Photo*/
+#fullpage .section .photoCon{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#fullpage .section .photoCon .goToPhoto{
+	font-size: 15vw;
+	font-weight: bold;
+}
+#fullpage .section .photoCon .goToPhoto a{
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+#fullpage .section .photoCon .goToPhoto a:hover{
+	background: rgba(227, 0, 0, 0.4);
+}
+/*End Photo*/
+#fullpage .section:nth-child(4) .albumBox{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding:0 3%;
+}
+#fullpage .section:nth-child(4) .albumBox img{
+	width: 100%;
+	height: 100%;
+}
+#fullpage .section:nth-child(4) .albumBox img:hover{
+	transition: 0.7s;
+	transform: scale(1.2) rotate(360deg);
+}
+
+#fullpage .section:nth-child(5) .activityCon{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#fullpage .section:nth-child(5) .activityCon img{
+	margin-left: 20%;
+	margin-top: 50%;
+	width: 60%;
+	height: 60%;
+	transition: 1s;
+}
+#fullpage .section:nth-child(5) .activityCon img:hover{
+	transform: scale(0.8);
+}
+#fullpage .section:nth-child(5) .activityCon .activityText{
+	/*background: rgba(0,0,0, 0.5);*/
+	color: white;
+	width: 320px;
+	padding: 20px 3%;
+	height: auto;
+	line-height: 150%;
+	font-size: 12px;
+	font-weight: lighter;
+	text-align: justify;
+}
+
+#fullpage .section:nth-child(5) .activityCon .activityText:hover{
+	transition: 0.5s;
+	transform: translate(5px,0px);
+}
+#fullpage .section:nth-child(5) .activityCon .activityText .highlight{
+	font-weight: bold;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+}
+#fullpage .section:nth-child(5) .activityCon .verticalLine{
+	width:1px;
+	height: 500px;
+	background: rgba(255,255,255,0.2);
+}
+
+/*Start Contact */
+
+#fullpage .section:nth-child(6) #contactCon{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+#fullpage .section:nth-child(6) #contactCon .leftCon{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	padding-left: 5%;
+}
+#fullpage .section:nth-child(6) #contactCon .leftCon .bigContact{
+	width: 100%;
+	height: 500px;
+	padding: 0;
+	color: white;
+	font-size: 130px;
+	text-align: justify;
+	font-weight: bold;
+	letter-spacing: 8px;
+	transition: 0.3s;
+}
+#fullpage .section:nth-child(6) #contactCon .leftCon .bigContact:hover{
+	letter-spacing: 20px;
+	color:rgba(255, 202, 66, 1);
+}
+#fullpage .section:nth-child(6) #contactCon .rightCon{
+	width: 50%;
+	height: 500px;
+	padding:0 5%;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-items: flex-end;
+}
+#fullpage .section:nth-child(6) #contactCon .rightCon .textInfo{
+	margin-top: 20px;
+	font-weight: lighter;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-align: right;
+}
+#fullpage .section:nth-child(6) #contactCon .rightCon .text1:hover{
+	transition: 0.6s;
+	color:rgba(255, 202, 66, 1);
+}
+#fullpage .section:nth-child(6) #contactCon .rightCon .text2:hover{
+	transition: 0.6s;
+	color:rgba(255, 202, 66, 1);
+}
+#fullpage .section:nth-child(6) #contactCon .rightCon .text3:hover{
+	transition: 0.6s;
+	color:rgba(255, 202, 66, 1);
+}
+#fullpage .section:nth-child(6) #contactCon .rightCon .text4:hover{
+	transition: 0.6s;
+	color:rgba(255, 202, 66, 1);
+}
